@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scratch your head!</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400i|Roboto:400,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/style.css">
+    </head>
+<body>
+    <a href="#main" class="skipLink">Skip to main content</a>
+    <header>
+        <div class ="flexHeaderContainer wrapper" id = "welcomePage">
+           <h1>Scratch your head</h1>
+           <a class ="start next" href ="#welcomePage">Take Memory Test</a>
+       </div>
+   </header>
+   <main>
+       <div class="wrapper">
+           <div class = "display">
+               <div class = "questionContainer" id="questionPage">
+                    <h4 class="tagName"></h4>   
+                    <p class="text"></p>
+                    <img class="questionImage">   
+                    <a class="next" href="#questionPage">Next</a>
+                </div>
+           </div>
+           <div class="questionContainer" id="mainPage">
+                <ul class="mainList">
+                    <li class="listItem"></li>
+                    <a class="next" href="#mainPage">Proceed to results</a>
+                </ul>
+           </div>
+           <div class="questionContainer" id="resultPage">
+               
+               <p class="results"></p>
+               <a class="resetButton" href="#welcomePage">Let's play again</a>
+           </div>
+
+       </div>
+   </main>
+   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+	<script src="script.js"></script>
+</body>
+</html> 

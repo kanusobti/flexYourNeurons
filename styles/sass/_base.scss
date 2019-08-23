@@ -1,0 +1,72 @@
+$iceBlue:#eafefc;
+$yellow:#fdd908;
+$blue:#0d457f;
+$white:#ffffff;
+$baseFont:'Roboto', sans-serif;
+$headingFont:'IM Fell English', serif;
+////Base styling///
+html{
+    font-size:62.5%;
+}
+h1, h4, body, ul, li, p{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    max-width:100%;
+    height:auto;
+    border:0;
+    display:block;
+    width:100%;
+}
+
+a{
+    text-decoration: none;
+    color:black; 
+    font-size:2rem;
+}
+.wrapper{
+    max-width: 1280px;
+    margin:0 auto;
+    width:60%;
+}
+h1{
+    font-size: 7.9rem;
+    font-weight: 400;
+    font-style: italic;
+    text-transform:uppercase;
+    margin:0;
+    color: $yellow;
+    font-family: $headingFont;
+}
+h4{
+    font-size:2.5rem;
+    font-style: italic;
+    line-height: 58px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+p, li, input, textarea{
+    font-size:2rem;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-family:$baseFont;
+
+}
+
+.resetButton,
+.start,
+.next{
+    font-size:2.24rem;
+    text-align: center;
+    line-height: 41.6px;
+    text-align: center;
+    text-transform:uppercase;
+    font-family: $headingFont;
+    color:$blue;
+    font-style: italic;
+    background: $yellow;
+    padding: 10px 20px;    
+}
