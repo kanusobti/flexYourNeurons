@@ -10,24 +10,25 @@
 const masterArray = [
     {
         tagName : "Apple",
-        text : "You reach to turn off the alarm you find apple under it."
-    
+        textQuestion : "You reach to turn off the alarm you find apple under it."
+       
     },
     {
         tagName : "Asparagus",
-        text : "You walk on the fllor and you find asparagus under your feet.",
+        textQuestion : "You walk on the fllor and you find asparagus under your feet."
+       
     },
     {
         tagName : "Tissue Paper",
-        text : "As you reach to turn on the light you notice tissue paper under it.",
+        textQuestion : "As you reach to turn on the light you notice tissue paper under it."
     },
     {
         tagName : "Milk",
-        text : "You look out of the window and milk drifts from the glass",
+        textQuestion : "You look out of the window and milk drifts from the glass"
     },
     {
         tagName : "Grapes",
-        text : "In the bathroom you find grapes in your toilet",
+        textQuestion : "In the bathroom you find grapes in your toilet"
     }
 
 ]
@@ -61,49 +62,45 @@ $(document).ready(function(){
 
     };
     generateQuestionArray(countQuestionsToShow);
+    masterArray.forEach(function(item){
+        // console.log(item.tagName);
+        $('.optionsList').append(`<li class = "listItem">${item.tagName}</li>`);
+    }); 
+    $('.optionsList').hide(); 
+    $('.questionContainer').hide();
     // console.log(questionsArray);
     //2. event listener
     //Function to load question page
-    const questionPage = function(i) {	
-    $('.tagName').append(`<h4 class="tagName">${questionsArray[i].tagName}</h4>`);
-    $('.text').append(`<p class="text">${questionsArray[i].text}</p>`);
-
-}; 
-    $('.questionContainer').hide();
+    const questionPage = function(i) {
+        $('.tagName').text(questionsArray[i].tagName);
+        $('.textQuestion').text(questionsArray[i].textQuestion);
+    // $('.questionImage').append('img class=')
+    }; 
+    
     $('.next').on('click',function(){
 		$('#questionPage').show();
 		$('header').hide();
         $('.tagName').empty();
-        $('.text').empty();	
+        $('.textQuestion').empty();	
         
         if(i<questionsArray.length) {
 			
 			questionPage(i);
 			i= i+1;
 
-		} else if (i>=questionsArray.length){	
+        } 
+        else if (i>=questionsArray.length){	
 			//Show results page
 			 $('#questionPage').hide();
              $('#mainPage').show();
-             $('.main').hide();
+             $('.proceedToResults').hide();
              $('.results').hide();
              $('.resetButton').hide();
-            // console.log(masterArray[i].tagName);
-            masterArray.forEach(function(item){
-                // console.log(item.tagName);
-                $('.mainList').append(`<li class = "listItem">${item.tagName}</li>`);
-            });    
-
-        }
-        
-        let counter = 0;
-        
-        $('.listItem').on('click', function() {
-            // console.log('Hey! u clicked me!');
-            // let value = $(this).text()
-            // console.log(value);
-            counter = counter+1;
-            console.log(counter);
+            // console.log(masterArray[i].tagName);  
+             $('.optionsList').show();
+        }        
+       
+        $('.listItem').off('click').on('click', function(){
             if(userPickArray.length < questionsArray.length){
                 let selectedOption = $(this).text();
                 userPickArray.push(selectedOption);
@@ -122,7 +119,7 @@ $(document).ready(function(){
                 
                 
                 if(userPickArray.length === questionsArray.length){
-                    $('.main').show(); 
+                    $('.proceedToResults').show(); 
                     
                 }   
                 
@@ -139,10 +136,10 @@ $(document).ready(function(){
             
     }); //next button event stops here
     ///main button event starts here
-    $('.main').on('click',function(){
-        $('.mainList').hide();
-        $('.main').hide();
-        $('.results').append(`<p class="results"> You answered${correctArray.length} out of ${questionsArray.length} correctly</p>`);
+    $('.proceedToResults').on('click',function(){
+        $('.optionsList').hide();
+        $('.proceedToResults').hide();
+        $('.results').text(`You answered${correctArray.length} out of ${questionsArray.length} correctly.`);
         $('.results').show();
         $('.resetButton').show();    
        
@@ -150,8 +147,14 @@ $(document).ready(function(){
     ///reset button event starts here
     $('.resetButton').on('click',function(){
         $('header').show();
-       $('main').hide();
-        
+       $('.questionContainer').hide();       
+       i = 0;
+       questionsArray=[];
+       userPickArray = [];
+       correctArray = [];
+       incorrectArray = [];
+       generateQuestionArray(countQuestionsToShow);
+       $('.results').text(``);
     })
     //reset button event ends here
     
