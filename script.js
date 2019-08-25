@@ -10,14 +10,14 @@
 const masterArray = [
     {
         tagName : "Apple",
-        textQuestion : "You reach to turn off the alarm you find apple under it.",
+        textQuestion : "You reach to turn off the alarm you find Apple under it.",
         imageSource : "Assets/apple.svg",
         imageText : "Red apple with a green leaf"
        
     },
     {
         tagName : "Asparagus",
-        textQuestion : "You walk on the floor and you find asparagus under your feet.",
+        textQuestion : "You walk on the floor and you find Asparagus under your feet.",
         imageSource : "Assets/asparagusColored.svg",
         imageText : "Bunch of Green Asparagus"
 
@@ -25,19 +25,19 @@ const masterArray = [
     },
     {
         tagName : "Tissue",
-        textQuestion : "As you reach to turn on the light you notice tissue paper under it.",
+        textQuestion : "As you reach to turn on the light you notice Tissue paper under it.",
         imageSource : "Assets/tissuePaper.svg",
         imageText : "Roll of Tissue Paper"
     },
     {
         tagName : "Milk",
-        textQuestion : "You look out of the window and milk drifts from the glass",
+        textQuestion : "You look out of the window and Milk drifts from the glass.",
         imageSource : "Assets/milk.svg",
         imageText : "Milk dripping from Jug"
     },
     {
         tagName : "Grapes",
-        textQuestion : "In the bathroom you find grapes in your toilet",
+        textQuestion : "You went to the bathroom and you found grapes in your toilet.",
         imageSource : "Assets/grapes.svg",
         imageText : "Bunch of purple Grapes"
     },
@@ -49,13 +49,13 @@ const masterArray = [
       },
       { 
         tagName : "Pepper", 
-        textQuestion: "You went to grab your Jeans but it's pockets were full of Black Peppers.",
+        textQuestion: "You went to grab your jeans but it's pockets were full of black Peppers.",
         imageSource : "Assets/blackPepper.svg",
         imageText : "Heap of Black Pepper"
       },
       { 
         tagName : "Bread", 
-        textQuestion: "On the floor, instead of tiles, you find Bread everywhere.",
+        textQuestion: "As you were walking on the floor, instead of tiles, you found Bread everywhere.",
         imageSource : "Assets/breadLoaf.svg",
         imageText : "Bread Loaf with slices"
       },

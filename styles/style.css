@@ -232,6 +232,7 @@ h1, h4, body, ul, li, p, div {
 }
 
 body {
+  overflow: hidden;
   background: linear-gradient(-45deg, #22c1c3, #fdbb2d, #00b09b, #96c93d);
   background-size: 600% 600%;
   -webkit-animation: AnimationName 30s ease infinite;
@@ -315,6 +316,24 @@ li {
   color: #333330;
 }
 
+.button {
+  font-family: "Anonymous Pro", monospace;
+  text-decoration: none;
+  background-color: coral;
+  color: cyan;
+  padding: 10px 20px;
+  border: none;
+  font-size: 2rem;
+  -webkit-box-shadow: 6px 5px 6px gray;
+          box-shadow: 6px 5px 6px gray;
+}
+
+.button:hover {
+  color: #595940;
+  -webkit-box-shadow: 8px 7px 8px gray;
+          box-shadow: 8px 7px 8px gray;
+}
+
 .skipLink {
   position: absolute;
   left: -1000px;
@@ -376,6 +395,10 @@ header {
   display: block;
 }
 
+.headerWrapper .leftSideHeader .button {
+  margin-top: 7%;
+}
+
 .headerWrapper .rightSideHeader {
   width: 50%;
 }
@@ -391,6 +414,10 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+main .button {
+  margin-top: 3%;
 }
 
 .display {
@@ -410,7 +437,6 @@ header {
           align-items: center;
   margin: 7% 0;
   padding: 10%;
-  position: relative;
 }
 
 .questionImage {

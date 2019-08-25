@@ -43,6 +43,10 @@ header {
 		span{
 			display: block;
 		}
+		.button{
+			margin-top:7%;
+			
+		}
 	}
 	
 	.rightSideHeader{
@@ -58,6 +62,9 @@ header {
 	justify-content: space-between;
 	
 }
+main .button{
+	margin-top:3%;
+}
 .display {
 	background : rgba(255, 255, 255, 0.2);
 	.questionContainer {
@@ -66,7 +73,7 @@ header {
 		align-items: center;
 		margin:7% 0;
 		padding:10%;
-		position: relative;	
+		// position: relative;	
 	}
 }
 .questionImage{

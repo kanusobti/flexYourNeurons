@@ -15,13 +15,10 @@
 <body>
     <a href="#" class="skipLink">Skip to main content</a>
     <header class ="mainHeader" id = "welcomePage">
-        <div class="logo animated infinite bounce">
-            <img src="Assets/logo.svg" alt="a light bulb with yellow filled light">
-        </div>
         <div class="headerWrapper">
             <div class="leftSideHeader ">
                 <h1>Flex <span>your neurons!</span></h1>
-                <a class ="start next" href ="#welcomePage">Let's play!</a>
+                <a class ="start next button" href ="#welcomePage">Let's play!</a>
             </div>
             <div class="rightSideHeader">
                 <img class="headerImage" src="Assets/brainHeader.svg" alt="human brain image">
@@ -31,23 +28,23 @@
    <main>
        <div class="wrapper">
            <div class = "display">
+               <div class="logo animated infinite bounce">
+                   <img src="Assets/logo.svg" alt="a light bulb with yellow filled light">
+               </div>
                <div class = "questionContainer" id="questionPage">
-                    <div class="logo animated infinite bounce">
-                        <img src="Assets/logo.svg" alt="a light bulb with yellow filled light">
-                    </div>
                     <h2 class="tagName"></h2>   
                     <p class="textQuestion"></p>   
                     <img class="questionImage" src="imageSource" alt="imageText">
-                    <a class="next" href="#questionPage">Next</a>
+                    <a class="next button" href="#questionPage">Next</a>
                 </div>
            </div>
            <div class ="display">
                <div class="questionContainer" id="mainPage">
                     <ul class="optionsList">
                     </ul>
-                    <a class="proceedToResults" href="#mainPage">Proceed to results</a>
+                    <a class="proceedToResults button" href="#mainPage">Proceed to results</a>
                     <p class="results"></p>
-                    <a class="resetButton" href="#welcomePage">Let's play again</a>
+                    <a class="resetButton button" href="#welcomePage">Let's play again</a>
                </div>
            </div>
        </div>
