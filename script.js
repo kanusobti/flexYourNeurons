@@ -10,26 +10,157 @@
 const masterArray = [
     {
         tagName : "Apple",
-        textQuestion : "You reach to turn off the alarm you find apple under it."
+        textQuestion : "You reach to turn off the alarm you find apple under it.",
+        imageSource : "Assets/apple.svg",
+        imageText : "Red apple with a green leaf"
        
     },
     {
         tagName : "Asparagus",
-        textQuestion : "You walk on the fllor and you find asparagus under your feet."
+        textQuestion : "You walk on the floor and you find asparagus under your feet.",
+        imageSource : "Assets/asparagusColored.svg",
+        imageText : "Bunch of Green Asparagus"
+
        
     },
     {
-        tagName : "Tissue Paper",
-        textQuestion : "As you reach to turn on the light you notice tissue paper under it."
+        tagName : "Tissue",
+        textQuestion : "As you reach to turn on the light you notice tissue paper under it.",
+        imageSource : "Assets/tissuePaper.svg",
+        imageText : "Roll of Tissue Paper"
     },
     {
         tagName : "Milk",
-        textQuestion : "You look out of the window and milk drifts from the glass"
+        textQuestion : "You look out of the window and milk drifts from the glass",
+        imageSource : "Assets/milk.svg",
+        imageText : "Milk dripping from Jug"
     },
     {
         tagName : "Grapes",
-        textQuestion : "In the bathroom you find grapes in your toilet"
-    }
+        textQuestion : "In the bathroom you find grapes in your toilet",
+        imageSource : "Assets/grapes.svg",
+        imageText : "Bunch of purple Grapes"
+    },
+    { 
+        tagName : "Beer",
+        textQuestion: "You went to bathroom and notice your bathtub is full of Beer.",
+        imageSource : "Assets/beer.svg",
+        imageText : "Beer mugs with beer bottles"
+      },
+      { 
+        tagName : "Pepper", 
+        textQuestion: "You went to grab your Jeans but it's pockets were full of Black Peppers.",
+        imageSource : "Assets/blackPepper.svg",
+        imageText : "Heap of Black Pepper"
+      },
+      { 
+        tagName : "Bread", 
+        textQuestion: "On the floor, instead of tiles, you find Bread everywhere.",
+        imageSource : "Assets/breadLoaf.svg",
+        imageText : "Bread Loaf with slices"
+      },
+      { 
+        tagName : "Carrots", 
+        textQuestion: "You open your vanity and you notice it's full of Carrots.",
+        imageSource : "Assets/carrots.svg",
+        imageText : "Bunch of orange Carrots"
+      },
+      { 
+        tagName : "Cheese", 
+        textQuestion: "You come down the stairs but there's cheese everywhere on your stairs.",
+        imageSource : "Assets/cheese.svg",
+        imageText : "Cheddar cheese slices"
+      },
+      { 
+        tagName : "Cherry", 
+        textQuestion: "You wash your face but notice that the sink is full of Cherries.",
+        imageSource : "Assets/cherries.svg",
+        imageText : "Bunch of Cherries"
+      },
+      { 
+        tagName : "Coffee", 
+        textQuestion: "You take a glass for pouring water but instead its full of Coffee Beans.",
+        imageSource : "Assets/coffeeBeans.svg",
+        imageText : "A bag of Coffee Beans"
+      },
+      { 
+        tagName : "Cookies", 
+        textQuestion: "You look outside the window and notice squirrels eating all your Cookies.",
+        imageSource : "Assets/cookies.svg",
+        imageText : "Chocolate Cookies in a Jar"
+      },
+      { 
+        tagName : "Donuts", 
+        textQuestion: "While lying down on your bed, you notice there are Donuts everywhere on the ceiling.",
+        imageSource : "Assets/donuts.svg",
+        imageText : "Three donuts with sprinkles"
+      },
+      { 
+        tagName : "Eggs", 
+        textQuestion: "As you get into your car, you see that the windshield is full of Egg yolk.",
+        imageSource : "Assets/egg.svg",
+        imageText : "Broken egg with yolk"
+      },
+      { 
+        tagName : "Ginger", 
+        textQuestion: "You set out to do laundry but instead you find Gingers in your Washing Machine.",
+        imageSource : "Assets/ginger.svg",
+        imageText : "Ginger with a slice"
+      },
+      { 
+        tagName : "Ice Cream", 
+        textQuestion: "You notice that Ice Cream is dripping from your vanity mirror.",
+        imageSource : "Assets/iceCream.svg",
+        imageText : "Three colorful Ice Cream Cones"
+      },
+      { 
+        tagName : "Ketchup", 
+        textQuestion: "As you go to your family room, you find Ketchup on the walls.",
+        imageSource : "Assets/ketchup.svg",
+        imageText : "A tomato ketchup bottle"
+      },
+      { 
+        tagName : "Pizza", 
+        textQuestion: "In your living room, you notice that wall clock has been replaced by a Pizza.",
+        imageSource : "Assets/pizza.svg",
+        imageText : "A Hawaian Cheese and Pineapple Pizza"
+      },
+      { 
+        tagName : "Popcorn", 
+        textQuestion: "As you open your fridge, you notice that it's full of Popcorns and they're spilling everywhere.",
+        imageSource : "Assets/popcorn.svg",
+        imageText : "A tub of popcorn"
+      },
+      { 
+        tagName : "Red Wine", 
+        textQuestion: "You open your tap to get some water, but you're greeted with Red Wine instead.",
+        imageSource : "Assets/redWine.svg",
+        imageText : "Three red wine glasses"
+      },
+      { 
+        tagName : "Spaghetti", 
+        textQuestion: "You grab your comb, but instead of bristles its full of Spaghetti.",
+        imageSource : "Assets/spaghetti.svg",
+        imageText : "Spaghetti with marinara sauce"
+      },
+      { 
+        tagName : "Spinach", 
+        textQuestion: "In your backyard lawn, instead of grass you see Spinach everywhere.",
+        imageSource : "Assets/spinach.svg",
+        imageText : "Bunch of spinach leaves"
+      },
+      { 
+        tagName : "Tomatoes", 
+        textQuestion: "In your laptop bag, you notice that it's full of Tomatoes.",
+        imageSource : "Assets/tomato.svg",
+        imageText : "A tomato on the vine"
+      },
+      { 
+        tagName : "Turkey", 
+        textQuestion: "You switched on the TV but all you can see is smoked Turkey on the screen.",
+        imageSource : "Assets/turkey.svg",
+        imageText : "Thanksgiving smoked turkey"
+      }
 
 ]
 
@@ -38,7 +169,8 @@ let i = 0;
 let userPickArray = [];
 let correctArray = [];
 let incorrectArray = [];
-let countQuestionsToShow = 3;//Change this value to show the number of questions
+let countQuestionsToShow = 10;//Change this value to show the number of questions
+let correctOptionsArray = [];
 
 $(document).ready(function(){
     // console.log('i m ready');
@@ -55,6 +187,7 @@ $(document).ready(function(){
             else
             {
                 questionsArray.push(masterArray[getRandomNumber])
+                correctOptionsArray.push(masterArray[getRandomNumber].tagName)
                 // console.log(`i m unique`);
             }
         }
@@ -74,7 +207,9 @@ $(document).ready(function(){
     const questionPage = function(i) {
         $('.tagName').text(questionsArray[i].tagName);
         $('.textQuestion').text(questionsArray[i].textQuestion);
-    // $('.questionImage').append('img class=')
+        $('.questionImage').attr('src',questionsArray[i].imageSource);
+        $('.questionImage').attr('alt',questionsArray[i].imageText);
+        
     }; 
     
     $('.next').on('click',function(){
@@ -103,6 +238,7 @@ $(document).ready(function(){
         $('.listItem').off('click').on('click', function(){
             if(userPickArray.length < questionsArray.length){
                 let selectedOption = $(this).text();
+                $(this).addClass('userPick');
                 userPickArray.push(selectedOption);
 
                 let found = questionsArray.some(function(element){
@@ -137,11 +273,39 @@ $(document).ready(function(){
     }); //next button event stops here
     ///main button event starts here
     $('.proceedToResults').on('click',function(){
-        $('.optionsList').hide();
+        //$('.optionsList').hide();
         $('.proceedToResults').hide();
-        $('.results').text(`You answered${correctArray.length} out of ${questionsArray.length} correctly.`);
+        $('.results').text(`You answered ${correctArray.length} out of ${questionsArray.length} correctly.`);
         $('.results').show();
-        $('.resetButton').show();    
+        console.log('I am the new array');
+        console.log(correctOptionsArray);
+        $("ul li").each(function() { 
+          
+          let liText = $(this).text();
+          console.log(liText);
+
+          if(correctOptionsArray.includes(liText))
+          {
+            $(this).addClass('actualCorrectAnswers');
+          }
+
+          if(correctArray.includes(liText))
+          {
+            $(this).removeClass('actualCorrectAnswers');
+            $(this).addClass('correctUserPick');
+          }
+          else if(incorrectArray.includes(liText))
+          {
+            $(this).addClass('incorrectUserPick');
+          }
+          
+          
+        
+        
+        });
+
+        
+        $('.resetButton').show();   
        
     });///main button event ends here
     ///reset button event starts here
@@ -155,6 +319,11 @@ $(document).ready(function(){
        incorrectArray = [];
        generateQuestionArray(countQuestionsToShow);
        $('.results').text(``);
+       $('li').removeClass('userPick');
+       $('li').removeClass('actualCorrectAnswers');
+       $('li').removeClass('correctUserPick');
+       $('li').removeClass('incorrectUserPick');
+
     })
     //reset button event ends here
     

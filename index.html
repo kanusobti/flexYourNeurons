@@ -4,37 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Scratch your head!</title>
+    <title>Flex your neurons!</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400i|Roboto:400,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Francois+One|Playfair+Display:700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="shortcut icon" type="image/svg" href="Assets/logo.svg"/>
     <link rel="stylesheet" href="styles/style.css">
-    </head>
+</head>
 <body>
     <a href="#" class="skipLink">Skip to main content</a>
-    <header>
-        <div class ="flexHeaderContainer wrapper" id = "welcomePage">
-           <h1>Scratch your head</h1>
-           <a class ="start next" href ="#welcomePage">Take Memory Test</a>
-           
+    <header class ="mainHeader" id = "welcomePage">
+        <div class="logo animated infinite bounce">
+            <img src="Assets/logo.svg" alt="a light bulb with yellow filled light">
+        </div>
+        <div class="headerWrapper">
+            <div class="leftSideHeader ">
+                <h1>Flex <span>your neurons!</span></h1>
+                <a class ="start next" href ="#welcomePage">Let's play!</a>
+            </div>
+            <div class="rightSideHeader">
+                <img class="headerImage" src="Assets/brainHeader.svg" alt="human brain image">
+            </div>  
        </div>
    </header>
    <main>
        <div class="wrapper">
            <div class = "display">
                <div class = "questionContainer" id="questionPage">
-                    <h4 class="tagName"></h4>   
+                    <div class="logo animated infinite bounce">
+                        <img src="Assets/logo.svg" alt="a light bulb with yellow filled light">
+                    </div>
+                    <h2 class="tagName"></h2>   
                     <p class="textQuestion"></p>   
+                    <img class="questionImage" src="imageSource" alt="imageText">
                     <a class="next" href="#questionPage">Next</a>
                 </div>
            </div>
-           <div class="questionContainer" id="mainPage">
-                <ul class="optionsList">
-                    <li class="listItem"></li>
+           <div class ="display">
+               <div class="questionContainer" id="mainPage">
+                    <ul class="optionsList">
+                    </ul>
                     <a class="proceedToResults" href="#mainPage">Proceed to results</a>
-                </ul>
-                <p class="results"></p>
-                <a class="resetButton" href="#welcomePage">Let's play again</a>
+                    <p class="results"></p>
+                    <a class="resetButton" href="#welcomePage">Let's play again</a>
+               </div>
            </div>
        </div>
    </main>
