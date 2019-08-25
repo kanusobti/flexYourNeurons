@@ -278,7 +278,8 @@ p, li, input, textarea {
 
 .resetButton,
 .start,
-.next {
+.next,
+.main {
   font-size: 2.24rem;
   text-align: center;
   line-height: 41.6px;
