@@ -155,13 +155,6 @@ const masterArray = [
         imageSource : "Assets/tomato.svg",
         imageText : "A tomato on the vine"
       }
-      // { 
-      //   tagName : "Turkey", 
-      //   textQuestion: "You switched on the TV but all you can see is smoked Turkey on the screen.",
-      //   imageSource : "Assets/turkey.svg",
-      //   imageText : "Thanksgiving smoked turkey"
-      // }
-
 ]
 
 //declare variables
@@ -173,22 +166,18 @@ let countQuestionsToShow = 10;//Change this value to show the number of question
 let correctOptionsArray = [];
 
 $(document).ready(function(){
-    // console.log('i m ready');
     let questionsArray = [];
     let generateQuestionArray = function(n){
-        // console.log('I am called');
         do {
             let getRandomNumber = Math.floor(Math.random() * masterArray.length);
-            // console.log(getRandomNumber);
             if (questionsArray.includes(masterArray[getRandomNumber]))
             {
-                // console.log('i m already there');
+             
             }
             else
             {
                 questionsArray.push(masterArray[getRandomNumber])
                 correctOptionsArray.push(masterArray[getRandomNumber].tagName)
-                // console.log(`i m unique`);
             }
         }
         while( questionsArray.length < n)
@@ -196,21 +185,18 @@ $(document).ready(function(){
     };
     generateQuestionArray(countQuestionsToShow);
     masterArray.forEach(function(item){
-        // console.log(item.tagName);
         $('.optionsList').append(`<li class = "listItem">${item.tagName}</li>`);
     }); 
     $('.optionsList').hide(); 
     $('.questionContainer').hide();
-    // console.log(questionsArray);
+
     //2. event listener
     //Function to load question page
     const questionPage = function(i) {
         $('.tagName').text(questionsArray[i].tagName);
         $('.textQuestion').text(questionsArray[i].textQuestion);
         $('.questionImage').attr('src',questionsArray[i].imageSource);
-        $('.questionImage').attr('alt',questionsArray[i].imageText);
-        
-        
+        $('.questionImage').attr('alt',questionsArray[i].imageText);    
     }; 
     
     $('.next').on('click',function(){
@@ -224,15 +210,14 @@ $(document).ready(function(){
 			questionPage(i);
 			i= i+1;
 
-        } 
-        else if (i>=questionsArray.length){	
+      } 
+      else if (i>=questionsArray.length){	
 			//Show results page
 			 $('#questionPage').hide();
              $('#mainPage').show();
              $('.proceedToResults').hide();
              $('.results').hide();
              $('.resetButton').hide();
-            // console.log(masterArray[i].tagName);  
              $('.optionsList').show();
         }        
        
@@ -252,39 +237,29 @@ $(document).ready(function(){
                 }else{
                     incorrectArray.push(selectedOption);
                 };
-                console.log(`Correct Array Length: ${correctArray.length}`);
-                
                 
                 if(userPickArray.length === questionsArray.length){
                     $('.proceedToResults').show(); 
-                    
                 }   
                 
                 $(this).off("click");
-                console.log(userPickArray);  
-                
             }
             else{
                 $('.listItem').click(function(){
                     return false;});   
-                }
+            }
                 
-            });
+        });
             
     }); //next button event stops here
+
     ///main button event starts here
     $('.proceedToResults').on('click',function(){
-        //$('.optionsList').hide();
         $('.proceedToResults').hide();
         $('.results').text(`You answered ${correctArray.length} out of ${questionsArray.length} correctly.`);
         $('.results').show();
-        console.log('I am the new array');
-        console.log(correctOptionsArray);
-        $("ul li").each(function() { 
-          
+        $("ul li").each(function() {
           let liText = $(this).text();
-          console.log(liText);
-
           if(correctOptionsArray.includes(liText))
           {
             $(this).addClass('actualCorrectAnswers');
@@ -299,31 +274,27 @@ $(document).ready(function(){
           {
             $(this).addClass('incorrectUserPick');
           }
-          
-          
-        
-        
         });
-
-        
+       
         $('.resetButton').show();   
        
     });///main button event ends here
+
     ///reset button event starts here
     $('.resetButton').on('click',function(){
-        $('header').show();
-       $('.questionContainer').hide();       
-       i = 0;
-       questionsArray=[];
-       userPickArray = [];
-       correctArray = [];
-       incorrectArray = [];
-       generateQuestionArray(countQuestionsToShow);
-       $('.results').text(``);
-       $('li').removeClass('userPick');
-       $('li').removeClass('actualCorrectAnswers');
-       $('li').removeClass('correctUserPick');
-       $('li').removeClass('incorrectUserPick');
+      $('header').show();
+      $('.questionContainer').hide();       
+      i = 0;
+      questionsArray=[];
+      userPickArray = [];
+      correctArray = [];
+      incorrectArray = [];
+      generateQuestionArray(countQuestionsToShow);
+      $('.results').text(``);
+      $('li').removeClass('userPick');
+      $('li').removeClass('actualCorrectAnswers');
+      $('li').removeClass('correctUserPick');
+      $('li').removeClass('incorrectUserPick');
 
     })
     //reset button event ends here

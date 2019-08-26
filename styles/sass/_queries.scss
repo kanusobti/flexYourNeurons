@@ -109,9 +109,8 @@
         width:200px;
         height:200px;
     }
-   
-    
 }//1000px media queries ends here
+
 @media(max-width: 940px) {
     .rules{
         display:none;
@@ -129,6 +128,7 @@
         }
     }
 }///940px ends here
+
 @media (max-width:768px) {
     h1{
         font-size: 7.4rem;
@@ -174,8 +174,8 @@
     li{
         font-size:1.8rem;
     }
-
 }//768px ends here
+
 @media (max-width :685px){
     h1{
         font-size:8.4rem;
@@ -228,9 +228,6 @@
     li{
         font-size:1.6rem;
     }
-   
-    
-    
 }///685px media queries ends
 
 @media (max-width: 480px){
@@ -246,7 +243,6 @@
         padding:48% 10%;
         
     }
-  
 
     }
     .optionsList{
@@ -255,11 +251,8 @@
             height:40px;
         }
     }
-    // li{
-    //     font-size:1.rem;
-    // }
-
 }///480px ends here
+
 @media (max-width:388px){
     .optionsList{
         grid-template-columns: repeat(2, 1fr);
@@ -312,16 +305,4 @@
             height:35px;
         }
     }
-    
-   
-   
-
-    
-    // .display {
-    //     .questionContainer {
-    //         padding:93% 10%;
-            
-    //     }
-    // }
-
 }///320px ends here

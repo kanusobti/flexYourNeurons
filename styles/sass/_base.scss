@@ -5,14 +5,17 @@ $mainHeadingFont:'Playfair Display', serif;
 $subHeadingFont : 'Francois One', sans-serif;
 $baseFont: 'Anonymous Pro', monospace;
 ////Base styling///
+
 html{
     font-size:62.5%;
 }
+
 h1, h4, body, ul, li, p, div{
     margin:0;
     padding:0;
     list-style:none;
 }
+
 body{
     overflow: hidden;
     background: linear-gradient(-45deg, #22c1c3, #fdbb2d, #00b09b, #96c93d);
@@ -20,8 +23,8 @@ body{
 	-webkit-animation:  AnimationName 30s ease infinite;
 	-moz-animation:     AnimationName 30s ease infinite;
     animation:          AnimationName 30s ease infinite;
-
 }
+
 @-webkit-keyframes AnimationName {
 	0%{background-position:0% 52%}
 	50%{background-position:100% 49%}
@@ -45,14 +48,17 @@ img{
     display:block;
     width:100%;
 }
+
 span{
     display: block;
 }
+
 .wrapper{
     max-width: 1280px;
     margin:0 auto;
     width:60%;
 }
+
 h1{
     font-size: 10rem;
     font-weight: 400;
@@ -61,8 +67,8 @@ h1{
     color: $headingColor;
     font-family: $mainHeadingFont;
     text-shadow: -9px 1px 2px #b4a6a6;
-
 }
+
 h2{
     font-size:4.8rem;
     font-style: italic;
@@ -70,8 +76,7 @@ h2{
     letter-spacing: 2.6px;
     font-family:$subHeadingFont;
     color:$headingColor;
-    text-shadow: -5px 0.4px 0px #b4a6a6;
-    
+    text-shadow: -5px 0.4px 0px #b4a6a6;    
 }
 
 p, li{
@@ -79,12 +84,13 @@ p, li{
     line-height: 28px;
     letter-spacing: 1px;
     font-family:$baseFont;
-    color:$baseColor;
-    
+    color:$baseColor;    
 }
+
 li{
     color:$gridColor;
 }
+
 .button {
     font-family: $baseFont;
     text-decoration: none;
@@ -98,7 +104,6 @@ li{
         color:$headingColor;
         box-shadow: 8px 7px 8px gray;
         cursor: pointer;
-        // background: rgba(255, 255, 255, 0.2);
     }
     &:focus{
         font-family: $subHeadingFont;
@@ -107,4 +112,4 @@ li{
         box-shadow: none;
     }
 
-  }
+}
