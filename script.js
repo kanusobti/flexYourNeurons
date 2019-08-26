@@ -154,7 +154,7 @@ const masterArray = [
         textQuestion: "In your laptop bag, you notice that it's full of Tomatoes.",
         imageSource : "Assets/tomato.svg",
         imageText : "A tomato on the vine"
-      },
+      }
       // { 
       //   tagName : "Turkey", 
       //   textQuestion: "You switched on the TV but all you can see is smoked Turkey on the screen.",
