@@ -37,7 +37,7 @@ const masterArray = [
     },
     {
         tagName : "Grapes",
-        textQuestion : "You went to the bathroom and you found grapes in your toilet.",
+        textQuestion : "You went to the bathroom and you found Grapes in your toilet.",
         imageSource : "Assets/grapes.svg",
         imageText : "Bunch of purple Grapes"
     },
@@ -49,7 +49,7 @@ const masterArray = [
       },
       { 
         tagName : "Pepper", 
-        textQuestion: "You went to grab your jeans but it's pockets were full of black Peppers.",
+        textQuestion: "You went to grab your jeans but it's pockets were full of black Pepper.",
         imageSource : "Assets/blackPepper.svg",
         imageText : "Heap of Black Pepper"
       },
@@ -67,12 +67,12 @@ const masterArray = [
       },
       { 
         tagName : "Cheese", 
-        textQuestion: "You come down the stairs but there's cheese everywhere on your stairs.",
+        textQuestion: "You come down the stairs but there's Cheese everywhere on your stairs.",
         imageSource : "Assets/cheese.svg",
         imageText : "Cheddar cheese slices"
       },
       { 
-        tagName : "Cherry", 
+        tagName : "Cherries", 
         textQuestion: "You wash your face but notice that the sink is full of Cherries.",
         imageSource : "Assets/cherries.svg",
         imageText : "Bunch of Cherries"
@@ -96,14 +96,14 @@ const masterArray = [
         imageText : "Three donuts with sprinkles"
       },
       { 
-        tagName : "Eggs", 
+        tagName : "Egg", 
         textQuestion: "As you get into your car, you see that the windshield is full of Egg yolk.",
         imageSource : "Assets/egg.svg",
         imageText : "Broken egg with yolk"
       },
       { 
         tagName : "Ginger", 
-        textQuestion: "You set out to do laundry but instead you find Gingers in your Washing Machine.",
+        textQuestion: "You set out to do laundry but instead you find Ginger in your Washing Machine.",
         imageSource : "Assets/ginger.svg",
         imageText : "Ginger with a slice"
       },
@@ -127,7 +127,7 @@ const masterArray = [
       },
       { 
         tagName : "Popcorn", 
-        textQuestion: "As you open your fridge, you notice that it's full of Popcorns and they're spilling everywhere.",
+        textQuestion: "As you open your fridge, you notice that it's full of Popcorn and they're spilling everywhere.",
         imageSource : "Assets/popcorn.svg",
         imageText : "A tub of popcorn"
       },
@@ -210,15 +210,16 @@ $(document).ready(function(){
         $('.questionImage').attr('src',questionsArray[i].imageSource);
         $('.questionImage').attr('alt',questionsArray[i].imageText);
         
+        
     }; 
     
     $('.next').on('click',function(){
-		$('#questionPage').show();
-		$('header').hide();
-        $('.tagName').empty();
-        $('.textQuestion').empty();	
+		  $('#questionPage').show();
+		  $('header').hide();
+      $('.tagName').empty();
+      $('.textQuestion').empty();	
         
-        if(i<questionsArray.length) {
+      if(i<questionsArray.length) {
 			
 			questionPage(i);
 			i= i+1;

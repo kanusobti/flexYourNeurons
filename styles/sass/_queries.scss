@@ -1,0 +1,245 @@
+@media (max-width:1405px) {
+    h1{
+        font-size: 9rem;
+    }
+    .headerWrapper{
+        .leftSideHeader{
+            width:48%;
+            margin-right:2%;
+        }
+        .rightSideHeader{
+            width:48%;
+            margin-left:2%;
+            .headerImage{
+                padding-top: 9rem;
+            }
+        }
+    }
+    
+
+}///1405px media queries ends
+@media (max-width:1322px) {
+    h1{
+        font-size:8.5rem;
+    }
+    .headerWrapper{
+        .rightSideHeader{
+            .headerImage{
+                padding-top: 10rem;
+            }
+        }
+    }
+
+}///1322px media queries ends
+@media (max-width:1247px){
+    h1{
+        font-size:8rem;
+    }
+}///1247px media queries ends here
+@media (max-width:1172px){
+    .headerWrapper{
+        .leftSideHeader{
+            width:50%;
+            margin-right:2%;
+        }
+        .rightSideHeader{
+            width:50%;
+            margin-left:0;
+            .headerImage{
+                padding-top: 13rem;
+            }
+        }
+    }
+    .display {
+        .questionContainer {
+            padding:25% 10%;
+            
+        }
+    }
+}///1172px media queries ends here
+@media(max-width:1000px) {
+    .headerWrapper{
+        .leftSideHeader{
+            width:46%;
+            .rules{
+                font-size:1.6rem;
+                line-height:20px;
+            }
+        }
+        .rightSideHeader{
+            width:54%;
+            .headerImage{
+                padding-top: 13rem;
+            }
+        }
+    }
+    .display {
+        .questionContainer {
+            padding:30% 10%;
+            
+        }
+    }
+    .questionImage{
+        width:200px;
+        height:200px;
+    }
+   
+    
+}//1000px media queries ends here
+@media(max-width: 940px) {
+    .rules{
+        display:none;
+    }
+    .ipadRules{
+        display: block;
+       p{
+        font-size: 1.6rem;
+       }
+    }
+    .display {
+        .questionContainer {
+            padding:35% 10%;
+            
+        }
+    }
+}///940px ends here
+@media (max-width:768px) {
+    h1{
+        font-size: 7.4rem;
+    }
+    .headerWrapper{
+        .leftSideHeader{
+            width:40%;
+            margin-right:5%;
+            padding-top: 26%;
+        }
+        .rightSideHeader{
+            width:44%;
+            margin-left:6%;
+        }
+    }
+    span{
+        display: inline;
+    }
+    .ipadRules{
+       p{
+        font-size: 1.5rem;
+        margin:13% -19%;
+       }
+    }
+    .display {
+        .questionContainer {
+            padding:40% 10%;
+            
+        }
+    }
+    p{
+        font-size: 2rem;
+    }
+
+}//768px ends here
+@media (max-width :685px){
+    h1{
+        font-size:8.4rem;
+        text-align: center;
+    }
+    h2{
+        margin-bottom:2%;
+    }
+    .headerWrapper{
+        .leftSideHeader{
+            width:90%;
+            margin:5%;
+            padding: 16% 0 5%;
+        }
+        .rightSideHeader{
+            display: none;
+        }
+    }
+    .ipadRules{
+        p{
+         font-size: 1.4rem;
+         margin:13% -19%;
+        }
+     }
+     .display {
+        .questionContainer {
+            padding:50% 10%;
+            
+        }
+    }
+    .logo{
+        top: 3%;
+        left:45%;
+        img{
+            width:65px;
+        }
+    }
+    p{
+        font-size:1.6rem;
+        line-height: 23px; 
+    }
+    
+}///685px media queries ends
+@media(max-width: 506px) {
+    .display {
+        .questionContainer {
+            padding:60% 10%;
+            
+        }
+    }
+}///506px media queries ends here
+@media (max-width: 480px){
+    h1{
+        font-size: 7rem;
+        padding-top: 15%;
+    }
+   h2{
+       font-size:3.8rem;
+   }
+   .display {
+    .questionContainer {
+        padding:68% 10%;
+        
+    }
+}
+}///480px ends here
+
+@media (max-width:320px){
+    h1{
+        font-size: 4.9rem;
+    }
+    .ipadRules{
+        p{
+            margin:12% 0;
+        }
+    }
+    .headerWrapper{
+        .leftSideHeader{
+           .button{
+               margin-top: 24%;
+           }
+        }
+       
+    }
+    h2{
+        font-size:3rem;
+    }
+    .logo{
+        top: 3%;
+        left:43%;
+        img{
+            width:55px;
+        }
+    }
+    p{
+        line-height: 20px;
+    }
+    .display {
+        .questionContainer {
+            padding:72% 10%;
+            
+        }
+    }
+
+}///320px ends here

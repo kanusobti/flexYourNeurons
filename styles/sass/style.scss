@@ -7,14 +7,15 @@
     left: -1000px;
     top: 5px;
     z-index: 999;
-    background: white;
-    color: black;
+    background: #c1aeae;
+	color: blue;
+	font-size: 20px;
 	&:focus {
 		left: 10px;
 	}
 }
 header {
-	position: relative;
+	// position: relative;
 	height:100vh;
 	width:100%;
 	background-size: cover;
@@ -40,12 +41,17 @@ header {
 		align-items: center;
 		flex-wrap: wrap;
 		padding-top:15%;
-		span{
-			display: block;
-		}
 		.button{
 			margin-top:7%;
 			
+		}
+		.rules{
+			margin-top:6%;
+			font-size:1.8rem;
+			line-height: 23px;
+			letter-spacing: 1px;
+			font-family:$baseFont;
+			color:$gridColor;
 		}
 	}
 	
@@ -53,14 +59,20 @@ header {
 		width:50%;
 		.headerImage{
 			padding-top: 4rem;
-		
 		}
 	}
 }
-.headerLinks{
-	display: flex;
-	justify-content: space-between;
-	
+.ipadRules {
+	display: none;
+	p{
+		font-size:1.8rem;
+		line-height: 23px;
+		letter-spacing: 1px;
+		font-family:$baseFont;
+		color:$gridColor;
+		margin: 1% -26%;
+
+	}
 }
 main .button{
 	margin-top:3%;
@@ -71,9 +83,9 @@ main .button{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin:7% 0;
-		padding:10%;
-		// position: relative;	
+		// margin:7% 0;
+		padding:22% 10%;
+		
 	}
 }
 .questionImage{
@@ -99,6 +111,10 @@ main .button{
 		&:hover{
 			background: rgba(0, 0, 0, 0.2);
 		}
+		&:active{
+			box-shadow: none;
+			transform: translate(50%, 50%  3s ease-in);
+		}
 	}
 }
 li.userPick{
@@ -113,15 +129,12 @@ li.userPick{
 	.actualCorrectAnswers{
 		border:3px dotted green;
 	}
-
-
-
-
-
-
-
-
-
-
+.results{
+	margin-top: 2%;
+}
+.displayResultWrapper {
+	width:90%;
+	background : rgba(255, 255, 255, 0.2);
+}
 
 @import "queries";

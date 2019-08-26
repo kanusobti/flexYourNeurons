@@ -45,12 +45,8 @@ img{
     display:block;
     width:100%;
 }
-
-a{
-    text-decoration: none;
-    color:$baseColor;
-    font-size:2.2rem;
-    font-family: $subHeadingFont;
+span{
+    display: block;
 }
 .wrapper{
     max-width: 1280px;
@@ -101,22 +97,14 @@ li{
     &:hover{
         color:$headingColor;
         box-shadow: 8px 7px 8px gray;
+        cursor: pointer;
         // background: rgba(255, 255, 255, 0.2);
+    }
+    &:focus{
+        font-family: $subHeadingFont;
+    }
+    &:active{
+        box-shadow: none;
     }
 
   }
-
-// .proceedToResults a,
-// .ruleBook a
-// .next a,
-// .resetButton a{
-//     // font-size:2.24rem;
-//     text-align: center;
-//     line-height: 41.6px;
-   
-//     // text-transform:uppercase;
-//     // font-family: $baseFont;
-//     // font-style: italic;
-//     padding: 10px 20px;   
-//     background: red; 
-// }
