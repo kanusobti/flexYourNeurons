@@ -155,12 +155,12 @@ const masterArray = [
         imageSource : "Assets/tomato.svg",
         imageText : "A tomato on the vine"
       },
-      { 
-        tagName : "Turkey", 
-        textQuestion: "You switched on the TV but all you can see is smoked Turkey on the screen.",
-        imageSource : "Assets/turkey.svg",
-        imageText : "Thanksgiving smoked turkey"
-      }
+      // { 
+      //   tagName : "Turkey", 
+      //   textQuestion: "You switched on the TV but all you can see is smoked Turkey on the screen.",
+      //   imageSource : "Assets/turkey.svg",
+      //   imageText : "Thanksgiving smoked turkey"
+      // }
 
 ]
 

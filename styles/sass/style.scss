@@ -79,12 +79,13 @@ main .button{
 }
 .display {
 	background : rgba(255, 255, 255, 0.2);
+	// height:100vh;
 	.questionContainer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		// margin:7% 0;
-		padding:22% 10%;
+		padding:19% 10%;
 		
 	}
 }
@@ -95,8 +96,8 @@ main .button{
 
 .optionsList{
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 1fr);
 	grid-gap:20px;
 	.listItem{
 		width:150px;
@@ -131,6 +132,7 @@ li.userPick{
 	}
 .results{
 	margin-top: 2%;
+	text-align: center;
 }
 .displayResultWrapper {
 	width:90%;

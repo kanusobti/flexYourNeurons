@@ -451,7 +451,7 @@ main .button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 22% 10%;
+  padding: 19% 10%;
 }
 
 .questionImage {
@@ -462,10 +462,10 @@ main .button {
 .optionsList {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
   grid-gap: 20px;
 }
 
@@ -517,6 +517,7 @@ li.userPick {
 
 .results {
   margin-top: 2%;
+  text-align: center;
 }
 
 .displayResultWrapper {
@@ -539,6 +540,9 @@ li.userPick {
   .headerWrapper .rightSideHeader .headerImage {
     padding-top: 9rem;
   }
+  .display .questionContainer {
+    padding: 22% 10%;
+  }
 }
 
 @media (max-width: 1322px) {
@@ -553,6 +557,12 @@ li.userPick {
 @media (max-width: 1247px) {
   h1 {
     font-size: 8rem;
+  }
+  main .special {
+    overflow-y: scroll;
+  }
+  .display .questionContainer {
+    padding: 24% 10%;
   }
 }
 
@@ -569,7 +579,17 @@ li.userPick {
     padding-top: 13rem;
   }
   .display .questionContainer {
-    padding: 25% 10%;
+    padding: 28% 10%;
+  }
+  .optionsList {
+    grid-gap: 10px;
+  }
+  .optionsList .listItem {
+    width: 100px;
+    height: 60px;
+  }
+  li {
+    font-size: 1.8rem;
   }
 }
 
@@ -588,7 +608,7 @@ li.userPick {
     padding-top: 13rem;
   }
   .display .questionContainer {
-    padding: 30% 10%;
+    padding: 34% 10%;
   }
   .questionImage {
     width: 200px;
@@ -607,7 +627,7 @@ li.userPick {
     font-size: 1.6rem;
   }
   .display .questionContainer {
-    padding: 35% 10%;
+    padding: 39% 10%;
   }
 }
 
@@ -632,10 +652,24 @@ li.userPick {
     margin: 13% -19%;
   }
   .display .questionContainer {
-    padding: 40% 10%;
+    padding: 46% 10%;
   }
   p {
     font-size: 2rem;
+  }
+  .optionsList {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[8];
+        grid-template-rows: repeat(8, 1fr);
+    grid-gap: 10px;
+  }
+  .optionsList .listItem {
+    width: 120px;
+    height: 40px;
+  }
+  li {
+    font-size: 1.8rem;
   }
 }
 
@@ -660,7 +694,7 @@ li.userPick {
     margin: 13% -19%;
   }
   .display .questionContainer {
-    padding: 50% 10%;
+    padding: 49% 10%;
   }
   .logo {
     top: 3%;
@@ -673,11 +707,15 @@ li.userPick {
     font-size: 1.6rem;
     line-height: 23px;
   }
-}
-
-@media (max-width: 506px) {
-  .display .questionContainer {
-    padding: 60% 10%;
+  .display {
+    background: rgba(212, 180, 180, 0.01);
+  }
+  .button {
+    font-size: 1.6rem;
+    padding: 8px 14px;
+  }
+  li {
+    font-size: 1.6rem;
   }
 }
 
@@ -690,7 +728,28 @@ li.userPick {
     font-size: 3.8rem;
   }
   .display .questionContainer {
-    padding: 68% 10%;
+    padding: 48% 10%;
+  }
+  .optionsList .listItem {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 388px) {
+  .optionsList {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[12];
+        grid-template-rows: repeat(12, 1fr);
+    grid-gap: 7px;
+  }
+  .optionsList .listItem {
+    width: 120px;
+    height: 30px;
+  }
+  .button {
+    font-size: 1.2rem;
   }
 }
 
@@ -717,7 +776,11 @@ li.userPick {
   p {
     line-height: 20px;
   }
-  .display .questionContainer {
-    padding: 72% 10%;
+  .optionsList {
+    grid-gap: 8px;
+  }
+  .optionsList .listItem {
+    width: 100px;
+    height: 35px;
   }
 }
