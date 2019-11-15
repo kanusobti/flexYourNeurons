@@ -1,8 +1,8 @@
 // PSEUDOCODE
-//On Page Load, populate questionArray with 3 random items from masterArray
+//On Page Load, populate questionArray with 10 random items from masterArray
 //When User clicks 'Take Memory Test' the first Item appears on the screen from the questionArray.
 //Empty page replaces the question 2 when user clicks "Next"
-//Repeat through 3 questions.
+//Repeat through 10 questions.
 //After the third item is shown. the user clicks 'Let's go Shopping'
 //On the click of this button a master list of items is shown and the //user is asked to select 3 items which he/she just saw.
 //Add the User's selected items into userPickarray.
